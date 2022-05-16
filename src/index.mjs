@@ -3,6 +3,9 @@ import { Low, JSONFile } from 'lowdb'
 
 export async function read(key){
     var temp = await load()
+    if(!temp[key]){
+        temp = await addKey(key)
+    }
     return temp[key].data
 }
 
