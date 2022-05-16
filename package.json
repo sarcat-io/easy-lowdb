@@ -1,0 +1,35 @@
+{
+  "name": "easy-lowdb",
+  "version": "1.0.0",
+  "description": "An extremely simple wrapper for lowdb.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "test": "node src/test.mjs"
+  },
+  "dependencies": {
+    "lowdb": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarcat-io/easy-lowdb.git"
+  },
+  "author": "brianthompson-sarcat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarcat-io/easy-lowdb/issues"
+  },
+  "homepage": "https://github.com/sarcat-io/easy-lowdb#readme",
+  "keywords": [
+    "database",
+    "db",
+    "electron",
+    "lowdb",
+    "embedded",
+    "flat",
+    "JSON",
+    "local",
+    "localStorage",
+    "easy",
+    "esm"
+  ]
+}
