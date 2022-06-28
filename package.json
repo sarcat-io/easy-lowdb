@@ -1,6 +1,6 @@
 {
   "name": "easy-lowdb",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "An extremely simple wrapper for lowdb.",
   "main": "src/index.mjs",
   "scripts": {

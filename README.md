@@ -1,21 +1,17 @@
 # easy-lowdb
 An extremely simple wrapper for lowdb. Will automatically manage the file and adapter operations of lowdb so you only have to worry about reading and writing. 
 
-    import { read, write } from 'easy-lowdb'
+    import { Easy } from 'easy-lowdb'
+    var key = 'string'// results in the name of the json file saved by lowdb
+    var dir = process.cwd() + '/ez' // location to save and read json file
+    var _db = new Easy(key, dir)
     
-    // Provide a string or number to use as a name for the data
-    // Results in a JSON file 
-    var key = 'string' 
-	
-	// provide data you want to save
-    var data = 'anything'
-    
-    // Write the data
-    await write(key, data)
-    
-    // Read the data by simply using the same key name
-    var readData = await ready(key)
+    if a json file exists tieh the name of 'key", it with load it and it will be accessible as _db.data
+    //( Ex: If the key = 'pdf' it will load or create a file name ./ez/pdf.json )
+  
+    _db.data = data (or _db.data = Object.assign({}, data)  
 
+    await _db.write()
+    await _db.read()
 
-Behind the scenes it uses JSON files named the same as the keys provided.
 
